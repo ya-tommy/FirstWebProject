@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nightStyle.css" />
     <link 
     href="https://fonts.googleapis.com/css2?family=Bitter&display=swap"
     rel="stylesheet" /> 
@@ -22,7 +22,7 @@
                 <a href="index.html">&#8592;back to Home</a>
                 <a href="whatNeedToStart.html">What do we need to start?</a>
                 <label class="switch">
-                    <input type="checkbox" onclick="myFunction()">
+                    <input type="checkbox" onclick="toggleTheme()">
                     <span class="slider round"></span>
                 </label>
             </ol>
@@ -50,13 +50,14 @@
     </div>
 </div>
 <script>
-    function myFunction() {
-        var theme = document.getElementsByTagName('link')[0]; 
-        if (theme.getAttribute('href') == 'style.css') { 
-            theme.setAttribute('href', 'nightStyle.css'); 
+    function toggleTheme() {
+        var theme = document.getElementsByTagName('link')[0];
+        var check = document.getElementById('cb');
+        if (theme.getAttribute('href') == 'nightStyle.css') { 
+            theme.href = 'style.css';
         } else { 
-            theme.setAttribute('href', 'style.css'); 
-        } 
+            theme.href = 'nightStyle.css';
+        }
     }
 </script>
 </body>
