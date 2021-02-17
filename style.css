@@ -29,6 +29,7 @@ nav {
 a:link {
 	display: inline-block;
 	list-style: none;
+	margin-left: 0px;
 	text-decoration: none;
 	color: rgb(48, 55, 61);
 }
