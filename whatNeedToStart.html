@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Bitter&display=swap"
+    rel="stylesheet" /> 
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=Roboto+Mono:ital,wght@1,300;1,400&display=swap" 
+    rel="stylesheet"/> 
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=Roboto+Mono:ital,wght@1,300;1,400;1,700&display=swap" 
+    rel="stylesheet"/> 
+</head>
+<body>
+    <main><section class="landing">
+        
+        <nav>
+            <h1 id="title">&lt/&gt</h1>
+            <ol>
+                <a href="index.html">&lt-back to Home</a>
+                <a href="whatIsIt.html">What is it?</a>
+                <label class="switch">
+                    <input type="checkbox" onclick="myFunction()">
+                    <span class="slider round"></span>
+                </label>
+            </ol>
+        </nav>
+        <h2 class="text">All you need to start programming is a PC and...</h2>
+        <section>
+            <img class="center" src="pictures/coffeecup-pic.jpg" style="width:25%"> 
+        </section>
+    </section>
+    <div class="intro">
+        <div class="text2">
+                <span class="text3">A CUP OF COFFEE ☕<br></span>
+                <span class="text2">(Really...)</span>
+        </div>
+    </div>
+</main>
+<script>
+    function myFunction() {
+        var theme = document.getElementsByTagName('link')[0]; 
+        if (theme.getAttribute('href') == 'style.css') { 
+            theme.setAttribute('href', 'nightStyle.css'); 
+        } else { 
+            theme.setAttribute('href', 'style.css'); 
+        } 
+    }
+</script>
+</body>

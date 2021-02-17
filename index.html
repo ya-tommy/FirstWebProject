@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Bitter&display=swap"
+    rel="stylesheet" /> 
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=Roboto+Mono:ital,wght@1,300;1,400&display=swap" 
+    rel="stylesheet"/> 
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=Roboto+Mono:ital,wght@1,300;1,400;1,700&display=swap" 
+    rel="stylesheet"/> 
+</head>
+<body>
+    <main><section class="landing">
+        
+        <nav>
+            <h1 id="title">&lt/&gt</h1>
+            <ol>
+                <a href="index.html">Home</a>
+                <a href="whatIsIt.html">What is it?</a>
+                <a href="whatNeedToStart.html">What do we need to start?</a>
+                <label class="switch">
+                    <input id="cb" type="checkbox" onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+            </ol>
+        </nav>
+        <h2 class="text">Anyone can program</h2>
+        <section>
+            <img class="center" src="pictures/prog.jpg" style="width: 60%;"> 
+        </section>
+    </section>
+</main>
+<div class="intro">
+    <div class="text2">
+            <span class="text2">Useful for tomorrow and beyond...</span>
+    </div>
+</div>
+<script>
+    // // function to set a given theme/color-scheme
+    // function setTheme(themeName) {
+    //     var theme = document.getElementsByTagName('link')[0];
+    //     localStorage.theme.setAttribute('href', 'nightStyle.css');
+    // }// function to toggle between light and dark theme
+
+    function toggleTheme() {
+        var theme = document.getElementsByTagName('link')[0];
+        var check = document.getElementById('cb');
+        if (theme.getAttribute('href') == 'style.css') { 
+            theme.href = 'nightStyle.css';
+        } else { 
+            theme.href = 'style.css';
+        }
+        
+        // localStorage.setAttribute('href', theme.href);
+    }// Immediately invoked function to set the theme on initial load
+</script>
+</body>
+
+
+
