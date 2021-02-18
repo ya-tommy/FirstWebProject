@@ -21,7 +21,7 @@
             <ol>
                 <a style="margin-left: 15px;" href="whatIsIt.html">What is it?</a>
                 <a style="margin-left: 15px;" href="whatNeedToStart.html">What do we need to start?</a>
-                <label class="switch">
+                <label class="switch" title="Switch to ☀️/🌙 mode">
                     <input id="cb" type="checkbox" onclick="toggleTheme()">
                     <span class="slider round"></span>
                 </label>
@@ -39,17 +39,7 @@
             <span class="text2">Useful for tomorrow and beyond...</span>
     </div>
 </div>
-<script>
-    function toggleTheme() {
-        var theme = document.getElementsByTagName('link')[0];
-        var check = document.getElementById('cb');
-        if (theme.getAttribute('href') == 'nightStyle.css') { 
-            theme.href = 'style.css';
-        } else { 
-            theme.href = 'nightStyle.css';
-        }
-    }
-</script>
+<script src="app.js"></script>
 </body>
 
 
