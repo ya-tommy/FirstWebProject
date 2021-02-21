@@ -24,18 +24,18 @@ else {
 }
 
 function navSideOpen() {
-    document.getElementById("mynavigationside").style.width = "100%";
+    document.getElementById("mymenu").style.width = "100%";
     document.getElementById("content").style.width = "0%";
 }
 
 function navSideClosed() {
-    document.getElementById("mynavigationside").style.width = "0";
+    document.getElementById("mymenu").style.width = "0";
     document.getElementById("content").style.width = "100%";
 }
 
 document.addEventListener('keydown', function(e){
 	if(e.key === "Escape"){
-		document.getElementById("mynavigationside").style.width = "0";
+		document.getElementById("mymenu").style.width = "0";
         document.getElementById("content").style.width = "100%";
 	}
 });
