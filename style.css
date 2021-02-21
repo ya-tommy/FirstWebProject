@@ -94,16 +94,18 @@ input:checked + .slider:before {
 	position: fixed;
 	top: 0;
 	right: 0;
+	bottom: 0;
 	background-color: rgb(0, 0, 0);
-	border-color: #e2eaf0;
 	border-top-left-radius: 22px;
+	/* border-bottom-left-radius: 22px; */
+	border-color: #e2eaf0;
 	overflow-x: hidden;
 	transition: 0.5s;
-	padding-top: 60px;
+	/* padding-top: 60px; */
 }
 
 .navigationside a {
-	padding: 1rem;
+	padding: 0.5rem;
 	text-decoration: none;
 	font-size: 2rem;
 	font-family: "Oswald", sans-serif;
@@ -118,18 +120,14 @@ input:checked + .slider:before {
 
 .navigationside .closebutton {
 	font-size: 3rem;
-	position: absolute;
+	position:relative;
+	text-align: left;
 	top: 0px;
 	left: 20px;
 }
 
 #content {
 	transition: .5s;
-}
-
-#title {
-	font-family: 'Roboto Mono', monospace;
-	font-size: 2.5rem;
 }
 
 #title {
