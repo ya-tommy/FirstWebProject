@@ -24,8 +24,8 @@ else {
 }
 
 function navSideOpen() {
-    document.getElementById("mynavigationside").style.width = "20%";
-    document.getElementById("content").style.width = "80%";
+    document.getElementById("mynavigationside").style.width = "100%";
+    document.getElementById("content").style.width = "0%";
 }
 
 function navSideClosed() {
