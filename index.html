@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="nightStyle.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="pictures/icon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="pictures/anicon.ico">
     <link 
     href="https://fonts.googleapis.com/css2?family=Bitter&display=swap"
     rel="stylesheet" /> 
@@ -15,31 +15,39 @@
     rel="stylesheet"/> 
 </head>
 <body>
-    <main><section class="landing">
+    <main id="content"><section class="landing">
         
         <nav>
-            <h1 id="title" href="index.html">&lt/&gt</h1>
+            <h1 id="title"><a href="index.html">&lt/&gt</a></h1>
             <ol>
-                <a style="margin-left: 15px;" href="whatIsIt.html">What is it?</a>
-                <a style="margin-left: 15px;" href="whatNeedToStart.html">What do we need to start?</a>
                 <label class="switch" title="Switch to ☀️/🌙 mode">
                     <input id="cb" type="checkbox" onclick="toggleTheme()">
                     <span class="slider round"></span>
                 </label>
+                <span style="font-size: 2.5rem;cursor:pointer" onclick="navSideOpen()" onclick="navSideClosed()">Menu</span>
             </ol>
         </nav>
+        <div id="mynavigationside" class="navigationside">
+            <div class="dropdown-content">
+                <a class="closebutton" onclick="navSideClosed()" href="javascript:void(0)">&rarr;</a>
+                <a href="index.html">Home</a>
+                <a href="whatIsIt.html">What is it?</a>
+                <a href="whatNeedToStart.html">What do we need to start?</a>
+                <span class="myText">made by ya-tommy</span>
+            </div>
+        </div>
         <h1 class="text">Anyone can program</h1>
         <h6 class="text" style="font-size:1rem">(If you are on your phone, rotate it on landscape mode)</h6>
         <section>
             <img class="center" src="pictures/prog.jpg" style="width: 60%;"> 
         </section>
     </section>
-</main>
 <div class="intro">
     <div class="text2">
             <span class="text2">Useful for tomorrow and beyond...</span>
     </div>
 </div>
+</main>
 <script src="app.js"></script>
 </body>
 

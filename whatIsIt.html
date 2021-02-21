@@ -15,24 +15,31 @@
     rel="stylesheet"/> 
 </head>
 <body>
-    <main><section class="landing">
+    <main id="content"><section class="landing">
         
         <nav>
-            <h1 id="title">&lt/<a href="index.html">Home</a>/&gt</h1>
+            <h1 id="title"><a href="index.html">&lt/&gt</a></h1>
             <ol>
-                <a style="margin-left: 15px;" href="whatNeedToStart.html">What do we need to start?</a>
                 <label class="switch" title="Switch to ☀️/🌙 mode">
                     <input id="cb" type="checkbox" onclick="toggleTheme()">
                     <span class="slider round"></span>
                 </label>
+                <span style="font-size: 2.5rem;cursor:pointer" onclick="navSideOpen()">Menu</span>
             </ol>
         </nav>
+        <div id="mynavigationside" class="navigationside">
+            <div class="dropdown-content">
+                <a href="javascript:void(0)" class="closebutton" onclick="navSideClosed()">&rarr;</a>
+                <a href="index.html">Home</a>
+                <a href="whatNeedToStart.html">What do we need to start?</a>
+                <span class="myText">made by ya-tommy</span>
+            </div>
+        </div>
         <h2 class="text">What is the goal of programming?</h2>
         <section>
             <img class="center" src="pictures/progBis.jpg" style="width:45%"> 
         </section>
     </section>
-</main>
 <div class="goal">
     <div class="text4">
             <span class="text4">Programs are used for an infinity of purposes such as building a website or creating an app.
@@ -49,5 +56,6 @@
             </span>
     </div>
 </div>
+</main>
 <script src="app.js"></script>
 </body>

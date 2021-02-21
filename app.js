@@ -22,3 +22,20 @@ if (document.getElementById('cb').checked ==  true) {
 else {
     theme.href = 'nightStyle.css';
 }
+
+function navSideOpen() {
+    document.getElementById("mynavigationside").style.width = "20%";
+    document.getElementById("content").style.width = "80%";
+}
+
+function navSideClosed() {
+    document.getElementById("mynavigationside").style.width = "0";
+    document.getElementById("content").style.width = "100%";
+}
+
+document.addEventListener('keydown', function(e){
+	if(e.key === "Escape"){
+		document.getElementById("mynavigationside").style.width = "0";
+        document.getElementById("content").style.width = "100%";
+	}
+});
