@@ -65,11 +65,11 @@ function handleTouchMove(e) {
     var difference = xStart - xEnd;
 
 
-    if (difference > 0) {
+    if (difference > 10) {
         document.getElementById("mymenu").style.width = "100%";
         document.getElementById("content").style.width = "0%";
     }
-    else {
+    else if (difference < -10){
         document.getElementById("mymenu").style.width = "0";
         document.getElementById("content").style.width = "100%";
     }
